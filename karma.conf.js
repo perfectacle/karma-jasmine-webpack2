@@ -16,20 +16,20 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       'karma.debug.js',
-      '**/*Spec.js'
+      '**/*.spec.*'
     ],
 
 
     // list of files to exclude
     exclude: [
-      'node_modules/**/*Spec.js'
+      'node_modules/**/*.spec.*'
     ],
 
 
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      '**/*Spec.js': ['webpack', 'sourcemap']
+      '**/*.spec.*': ['webpack', 'sourcemap']
     },
 
     webpack: {

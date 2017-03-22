@@ -1,0 +1,1 @@
+export const mul = (...args) => args.reduce((p, c) => p * c);
